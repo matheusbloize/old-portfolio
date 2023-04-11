@@ -52,7 +52,7 @@ section {
 }
 
 .header {
-  background-color: #1afeba;
+  background-color: #b2ffe8;
   height: 3.5em;
   width: 100vw;
   position: fixed;
@@ -69,23 +69,28 @@ section {
   font-weight: 700;
   color: #b2ffe8;
   text-shadow: 2px 2px 1px #001912;
+  transition: .5s;
 }
 
 .header ul {
   display: flex;
 }
 
+.header li {
+  position: relative;
+}
+
 .header a {
   margin-right: 2em;
   font-size: 2em;
   transition: .5s;
-  color: #b2ffe8;
-  text-shadow: 2px 2px 1px #001912;
+  color: #1afeba;
   font-weight: 200;
+  display: block;
 }
 
 .header a:hover {
-  text-shadow: 2px 2px 1px #b2ffe8;
+  scale: 1.1;
 }
 
 .main {
@@ -97,6 +102,13 @@ section {
   transition: .5s;
   display: flex;
   margin-bottom: 10em;
+}
+
+.about,
+.skills,
+.projects,
+.contact {
+  margin-bottom: 5em;
 }
 
 .home p {
@@ -251,7 +263,7 @@ section {
 }
 
 .project:nth-child(1):hover::after {
-  content: "Streaming\A Um serviço de streaming completo\A Tecnologias usadas: HTML, CSS, React,\A The Movie Database API";
+  content: "Streaming\A Um serviço de streaming completo\A Tecnologias usadas: HTML, CSS, Angular,\A The Movie Database API";
 }
 
 .project:nth-child(2):hover::after {

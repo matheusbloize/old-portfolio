@@ -3,7 +3,25 @@ const header = document.querySelector(".header")
 header.style.backgroundColor = "transparent"
 
 document.addEventListener("scroll", () => {
-  scrollY > 20 ? header.style.backgroundColor = "#1afeba" : header.style.backgroundColor = "transparent"
+  if(scrollY > 20) {
+    header.style.backgroundColor = "#1afeba"
+    header.querySelector(".clock").style.color = "#001912"
+    header.querySelector(".clock").style.textShadow = "2px 2px 1px #b2ffe8"
+    header.querySelectorAll("a")[0].style.color = "#001912"
+    header.querySelectorAll("a")[1].style.color = "#001912"
+    header.querySelectorAll("a")[2].style.color = "#001912"
+    header.querySelectorAll("a")[3].style.color = "#001912"
+    header.querySelectorAll("a")[4].style.color = "#001912"
+  } else {
+    header.style.backgroundColor = "transparent"
+    header.querySelector(".clock").style.color = "#b2ffe8"
+    header.querySelector(".clock").style.textShadow = "2px 2px 1px #001912"
+    header.querySelectorAll("a")[0].style.color = "#1afeba"
+    header.querySelectorAll("a")[1].style.color = "#1afeba"
+    header.querySelectorAll("a")[2].style.color = "#1afeba"
+    header.querySelectorAll("a")[3].style.color = "#1afeba"
+    header.querySelectorAll("a")[4].style.color = "#1afeba"
+  }
 })
 
 const headerAs = document.querySelectorAll(".header ul li a")
