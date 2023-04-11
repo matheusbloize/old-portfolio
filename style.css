@@ -51,6 +51,10 @@ section {
   margin-top: -2em;
 }
 
+#skills {
+  margin-top: -4em;
+}
+
 .header {
   background-color: #b2ffe8;
   height: 3.5em;
@@ -340,10 +344,6 @@ section {
 }
 
 @media screen and (max-width: 1100px) {
-  #projects {
-    margin-top: 3em;
-  }
-
   .main {
     max-width: 40em;
   }
@@ -416,6 +416,10 @@ section {
 
   .contact {
     margin-bottom: 2em;
+  }
+
+  .contact h2 {
+    margin-bottom: 1em;
   }
 }
 
